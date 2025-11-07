@@ -87,11 +87,11 @@ const ResourceSection = () => {
           >
             {FAQS.map((faq) => (
               <AccordionItem key={faq.question} value={faq.question} className="px-6">
-                <AccordionTrigger className="flex items-center gap-4 py-6 text-left text-base font-semibold uppercase tracking-[0.2em] text-foreground">
-                  <span className="text-accent">Q.</span>
-                  {faq.question}
+                <AccordionTrigger className="flex items-center justify-start gap-4 py-6 text-left text-base font-semibold uppercase tracking-[0.2em] text-foreground w-full">
+                  <span className="text-accent flex-shrink-0">Q.</span>
+                  <span className="text-left">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="pl-10 pb-6 text-sm leading-relaxed text-muted-foreground transition-all duration-300 data-[state=closed]:-translate-y-2 data-[state=closed]:opacity-0 data-[state=open]:translate-y-0 data-[state=open]:opacity-100">
+                <AccordionContent className="pl-10 pb-6 text-sm leading-relaxed text-muted-foreground text-left transition-all duration-300 data-[state=closed]:-translate-y-2 data-[state=closed]:opacity-0 data-[state=open]:translate-y-0 data-[state=open]:opacity-100">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
