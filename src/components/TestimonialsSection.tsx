@@ -139,18 +139,18 @@ const TestimonialsSection = () => {
               <Button
                 size="icon"
                 onClick={handlePrev}
-                className="h-12 w-12 rounded-none border-2 border-accent bg-transparent text-accent transition hover:bg-accent hover:text-primary-foreground"
+                className="h-12 w-12 rounded-none border-2 border-accent bg-transparent transition hover:bg-accent hover:text-primary-foreground"
                 aria-label="Previous testimonial"
               >
-                <ChevronLeft className="h-5 w-5" />
+                <ChevronLeft className="h-5 w-5 text-[#FFC56D]" />
               </Button>
               <Button
                 size="icon"
                 onClick={handleNext}
-                className="h-12 w-12 rounded-none border-2 border-accent bg-transparent text-accent transition hover:bg-accent hover:text-primary-foreground"
+                className="h-12 w-12 rounded-none border-2 border-accent bg-transparent transition hover:bg-accent hover:text-primary-foreground"
                 aria-label="Next testimonial"
               >
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight className="h-5 w-5 text-[#FFC56D]" />
               </Button>
             </div>
 
