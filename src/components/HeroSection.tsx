@@ -108,10 +108,10 @@ const HeroSection = () => {
             </div>
             
             {/* Main Headline - Large Golden Text */}
-            <div className="text-center">
+            <div className="text-center flex justify-center items-center">
               <h1 
                 ref={mainHeadlineRef}
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] xl:text-[9rem] font-black leading-[0.85] tracking-tight sm:whitespace-nowrap"
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] xl:text-[9rem] font-black leading-[0.85] tracking-tight sm:whitespace-nowrap text-center"
                 style={{ 
                   fontFamily: 'system-ui, -apple-system, sans-serif',
                   fontWeight: 900,
@@ -123,7 +123,9 @@ const HeroSection = () => {
                   display: 'inline-block',
                   backgroundSize: '100% 100%',
                   textShadow: '0 10px 28px rgba(179, 118, 21, 0.35)',
-                  letterSpacing: '-0.02em'
+                  letterSpacing: '-0.02em',
+                  textAlign: 'center',
+                  margin: '0 auto'
                 }}
               >
                 LET'S WIN TOGETHER
