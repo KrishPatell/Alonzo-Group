@@ -60,21 +60,18 @@ const ResultsSection = () => {
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all" />
               
-              {/* Centered PLAY VIDEO text */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              {/* PLAY VIDEO text and Progress Bar at bottom */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
                 <h3 
-                  className="text-white text-lg md:text-xl font-black uppercase tracking-wide"
+                  className="text-white font-black uppercase tracking-wide"
                   style={{
+                    fontSize: '0.956rem',
                     textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5)',
                     fontFamily: 'system-ui, -apple-system, sans-serif'
                   }}
                 >
                   PLAY VIDEO
                 </h3>
-              </div>
-              
-              {/* Progress Bar at bottom */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
                 <div className="h-0.5 bg-white/20 rounded-full overflow-hidden" style={{ width: '115px' }}>
                   <div 
                     className="h-full rounded-full"
