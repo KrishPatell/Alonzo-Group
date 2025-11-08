@@ -58,16 +58,30 @@ const ResultsSection = () => {
                 alt={`Testimonial video ${index + 1}`}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full p-6 transition-all transform group-hover:scale-110">
-                  <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
-                </button>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 text-center">
-                <span className="text-white font-semibold text-sm uppercase tracking-wider bg-black/60 px-3 py-1.5 rounded border border-white/20">
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all" />
+              
+              {/* Centered PLAY VIDEO text and progress bar */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <h3 
+                  className="text-white text-3xl md:text-4xl font-black uppercase tracking-wide mb-4"
+                  style={{
+                    textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5)',
+                    fontFamily: 'system-ui, -apple-system, sans-serif'
+                  }}
+                >
                   PLAY VIDEO
-                </span>
+                </h3>
+                
+                {/* Progress Bar */}
+                <div className="w-3/4 max-w-xs h-1.5 bg-white/20 rounded-full overflow-hidden">
+                  <div 
+                    className="h-full rounded-full"
+                    style={{
+                      width: '45%',
+                      background: 'linear-gradient(90deg, #D4A574 0%, #B8865B 100%)'
+                    }}
+                  />
+                </div>
               </div>
             </div>
           ))}
