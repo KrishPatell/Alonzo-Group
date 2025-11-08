@@ -59,11 +59,22 @@ const ServicesSection = () => {
               className="relative h-48 rounded-lg overflow-hidden cursor-pointer group"
               onClick={() => setActiveTab("greencards")}
             >
-              <img src={flagImage} alt="Green Cards" className="w-full h-full object-cover" />
-              <div className={`absolute inset-0 flex items-center justify-center font-black text-2xl text-primary-foreground transition-colors ${
-                activeTab === "greencards" ? "bg-primary/80" : "bg-primary/60 group-hover:bg-primary/70"
-              }`}>
-                GREEN CARDS
+              <img 
+                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop&q=80" 
+                alt="Green Cards" 
+                className="w-full h-full object-cover" 
+              />
+              <div 
+                className={`absolute inset-0 flex items-end justify-start p-4 transition-colors ${
+                  activeTab === "greencards" ? "bg-primary/80" : "bg-primary/60 group-hover:bg-primary/70"
+                }`} 
+                style={{
+                  background: activeTab === "greencards" 
+                    ? "linear-gradient(to top, rgba(11, 31, 61, 0.9) 0%, rgba(11, 31, 61, 0.7) 50%, transparent 100%)"
+                    : "linear-gradient(to top, rgba(11, 31, 61, 0.8) 0%, rgba(11, 31, 61, 0.6) 50%, transparent 100%)"
+                }}
+              >
+                <span className="text-2xl font-black text-gold-gradient">GREEN CARDS</span>
               </div>
             </div>
 
@@ -71,11 +82,22 @@ const ServicesSection = () => {
               className="relative h-48 rounded-lg overflow-hidden cursor-pointer group"
               onClick={() => setActiveTab("citizenship")}
             >
-              <img src={flagImage} alt="Citizenship" className="w-full h-full object-cover" />
-              <div className={`absolute inset-0 flex items-center justify-center font-black text-xl text-primary-foreground transition-colors ${
-                activeTab === "citizenship" ? "bg-primary/80" : "bg-primary/60 group-hover:bg-primary/70"
-              }`}>
-                CITIZENSHIP/<br/>NATURALIZATION
+              <img 
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop&q=80" 
+                alt="Citizenship" 
+                className="w-full h-full object-cover" 
+              />
+              <div 
+                className={`absolute inset-0 flex items-end justify-start p-4 transition-colors ${
+                  activeTab === "citizenship" ? "bg-primary/80" : "bg-primary/60 group-hover:bg-primary/70"
+                }`} 
+                style={{
+                  background: activeTab === "citizenship" 
+                    ? "linear-gradient(to top, rgba(11, 31, 61, 0.9) 0%, rgba(11, 31, 61, 0.7) 50%, transparent 100%)"
+                    : "linear-gradient(to top, rgba(11, 31, 61, 0.8) 0%, rgba(11, 31, 61, 0.6) 50%, transparent 100%)"
+                }}
+              >
+                <span className="text-xl font-black text-gold-gradient leading-tight">CITIZENSHIP/<br/>NATURALIZATION</span>
               </div>
             </div>
           </div>
