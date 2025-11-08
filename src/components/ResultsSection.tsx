@@ -110,9 +110,9 @@ const ResultsSection = () => {
           {/* Right columns */}
           <div className="flex-1 grid gap-8 md:grid-cols-3 lg:grid-cols-5">
             {RESULTS.map((item) => (
-              <div key={`${item.code}-${item.location}`} className="space-y-3 text-left">
-                <div className="text-5xl font-black tracking-[0.02em] text-gold-gradient">{item.code}</div>
-                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
+              <div key={`${item.code}-${item.location}`} className="text-left">
+                <div className="text-5xl font-black tracking-[0.02em] text-gold-gradient mb-2">{item.code}</div>
+                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70 mb-1">
                   {item.location}
                 </div>
                 <div className="text-base font-semibold uppercase tracking-[0.28em] text-white">
