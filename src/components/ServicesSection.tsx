@@ -60,7 +60,7 @@ const ServicesSection = () => {
               onClick={() => setActiveTab("greencards")}
             >
               <img 
-                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop&q=80" 
+                src="https://www.riftrust.com/wp-content/uploads/2024/02/Latest-News-on-EB-5-Visa-Filing-Fee-Increases-in-2024-Featured-Image.jpg" 
                 alt="Green Cards" 
                 className="w-full h-full object-cover" 
               />
@@ -83,7 +83,7 @@ const ServicesSection = () => {
               onClick={() => setActiveTab("citizenship")}
             >
               <img 
-                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop&q=80" 
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGN-foFG4K65YHJLRcpwCy0MJUehBYZPzILCgTUlG5oHScpUpa" 
                 alt="Citizenship" 
                 className="w-full h-full object-cover" 
               />
