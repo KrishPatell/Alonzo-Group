@@ -52,7 +52,7 @@ const ResultsSection = () => {
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=600&fit=crop",
             "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=600&fit=crop"
           ].map((imageUrl, index) => (
-            <div key={index} className="relative aspect-video rounded-lg overflow-hidden border border-white/10 group cursor-pointer">
+            <div key={index} className="relative aspect-[16/10.8] rounded-lg overflow-hidden border border-white/10 group cursor-pointer">
               <img 
                 src={imageUrl} 
                 alt={`Testimonial video ${index + 1}`}
@@ -63,7 +63,7 @@ const ResultsSection = () => {
               {/* Centered PLAY VIDEO text and progress bar */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <h3 
-                  className="text-white text-3xl md:text-4xl font-black uppercase tracking-wide mb-4"
+                  className="text-white text-lg md:text-xl font-black uppercase tracking-wide mb-3"
                   style={{
                     textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5)',
                     fontFamily: 'system-ui, -apple-system, sans-serif'
