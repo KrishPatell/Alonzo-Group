@@ -37,6 +37,31 @@ const ResultsSection = () => {
       />
 
       <div className="container relative mx-auto px-6 text-white">
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wide text-gold-gradient">
+            THIS IS WHAT RESULTS SOUND LIKE
+          </h2>
+        </div>
+
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          {[1, 2, 3, 4].map((video) => (
+            <div key={video} className="relative aspect-video rounded-lg overflow-hidden bg-primary-dark/50 backdrop-blur-sm border border-white/10">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button className="bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full p-6 transition-all">
+                  <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
+                </button>
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 text-center">
+                <span className="text-white font-semibold text-sm uppercase tracking-wider bg-black/40 px-3 py-1 rounded">
+                  PLAY VIDEO
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
           {/* Left column */}
           <div className="flex flex-col items-start text-white gap-6">
