@@ -100,9 +100,12 @@ const ResourceSection = () => {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <button className="rounded-none border border-accent px-8 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-accent transition hover:bg-accent hover:text-accent-foreground">
+          <Button
+            size="lg"
+            className="bg-accent hover:bg-accent-hover text-accent-foreground font-bold"
+          >
             MORE FAQS
-          </button>
+          </Button>
         </div>
 
         <div className="relative mt-24">
