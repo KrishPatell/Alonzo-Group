@@ -29,12 +29,7 @@ const AttorneySection = () => {
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Alonzi Law Group PLLC is a U.S. immigration law firm founded by Kate Alonzi, an attorney 
-                  who lived the immigration journey herself. Ten years ago, Kate came to the United States 
-                  on an E–2 visa — a life-changing experience that shaped both her career and her mission.
-                </p>
-                <p>
-                  Today, that same drive fuels her practice: helping others achieve their American dream.
+                  Alonzi Law Group PLLC is a U.S. immigration law firm founded by Kate Alonzi, an attorney who lived the immigration journey herself. Ten years ago, Kate came to the United States on an E–2 visa — a life-changing experience that shaped both her career and her mission. Today, that same drive fuels her practice: helping others achieve their American dream.
                 </p>
               </div>
 
