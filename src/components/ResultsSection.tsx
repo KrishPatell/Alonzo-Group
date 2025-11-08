@@ -46,15 +46,26 @@ const ResultsSection = () => {
 
         {/* Video Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {[1, 2, 3, 4].map((video) => (
-            <div key={video} className="relative aspect-video rounded-lg overflow-hidden bg-primary-dark/50 backdrop-blur-sm border border-white/10">
+          {[
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=600&fit=crop",
+            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=600&fit=crop",
+            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=600&fit=crop"
+          ].map((imageUrl, index) => (
+            <div key={index} className="relative aspect-video rounded-lg overflow-hidden border border-white/10 group cursor-pointer">
+              <img 
+                src={imageUrl} 
+                alt={`Testimonial video ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full p-6 transition-all">
+                <button className="bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full p-6 transition-all transform group-hover:scale-110">
                   <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
                 </button>
               </div>
               <div className="absolute bottom-4 left-4 right-4 text-center">
-                <span className="text-white font-semibold text-sm uppercase tracking-wider bg-black/40 px-3 py-1 rounded">
+                <span className="text-white font-semibold text-sm uppercase tracking-wider bg-black/60 px-3 py-1.5 rounded border border-white/20">
                   PLAY VIDEO
                 </span>
               </div>
