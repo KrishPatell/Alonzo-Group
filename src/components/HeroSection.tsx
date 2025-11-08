@@ -75,7 +75,7 @@ const HeroSection = () => {
       {/* Full Hero Section for Desktop */}
       <section
         id="home"
-        className="hidden lg:block relative min-h-[900px] md:min-h-screen flex items-end justify-center overflow-hidden"
+        className="hidden lg:flex relative min-h-[900px] md:min-h-screen overflow-hidden"
       >
         {/* Background Image - Using your Figma design */}
         <div 
@@ -90,8 +90,8 @@ const HeroSection = () => {
         />
 
         {/* Content Overlay */}
-        <div className="container mx-auto px-6 relative z-10 pt-24 pb-20 w-full">
-          <div className="max-w-7xl mx-auto space-y-6 flex flex-col">
+        <div className="container mx-auto px-6 relative z-10 flex flex-col justify-end pb-20 pt-32">
+          <div className="max-w-7xl mx-auto w-full space-y-6">
             {/* Top Text - Small White Text */}
             <div className="text-center">
               <p 
@@ -131,7 +131,7 @@ const HeroSection = () => {
             </div>
 
             {/* Bottom Text - Medium White Text */}
-            <div className="text-center mt-auto">
+            <div className="text-center">
               <p 
                 ref={bottomTextRef}
                 className="text-white text-base md:text-lg font-medium tracking-[0.2em] uppercase"
