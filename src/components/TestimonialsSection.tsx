@@ -142,7 +142,13 @@ const TestimonialsSection = () => {
                 className="h-12 w-12 rounded-none border-2 border-accent bg-transparent transition hover:bg-accent hover:text-primary-foreground"
                 aria-label="Previous testimonial"
               >
-                <ChevronLeft className="h-5 w-5 text-[#FFC56D]" />
+                <ChevronLeft 
+                  className="h-5 w-5" 
+                  style={{
+                    stroke: '#F5B54E',
+                    strokeWidth: 2.5
+                  }}
+                />
               </Button>
               <Button
                 size="icon"
@@ -150,7 +156,13 @@ const TestimonialsSection = () => {
                 className="h-12 w-12 rounded-none border-2 border-accent bg-transparent transition hover:bg-accent hover:text-primary-foreground"
                 aria-label="Next testimonial"
               >
-                <ChevronRight className="h-5 w-5 text-[#FFC56D]" />
+                <ChevronRight 
+                  className="h-5 w-5" 
+                  style={{
+                    stroke: '#F5B54E',
+                    strokeWidth: 2.5
+                  }}
+                />
               </Button>
             </div>
 
