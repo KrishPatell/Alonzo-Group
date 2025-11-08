@@ -91,7 +91,7 @@ const ResultsSection = () => {
           {/* Left column */}
           <div className="flex flex-col items-start text-white gap-6">
             <div>
-              <div className="text-[5.5rem] leading-none font-black tracking-tight text-gold-gradient">99</div>
+              <div className="text-5xl font-black tracking-tight text-gold-gradient">99</div>
               <div className="mt-2 text-sm font-semibold uppercase tracking-[0.45em] text-white/80">
                 SUCCESS RATE
               </div>
@@ -100,7 +100,7 @@ const ResultsSection = () => {
             <div className="w-14 border-t border-white/40" />
 
             <div>
-              <div className="text-[4rem] leading-none font-black tracking-tight text-gold-gradient">2,000</div>
+              <div className="text-5xl font-black tracking-tight text-gold-gradient">2,000</div>
               <div className="mt-3 text-base font-semibold uppercase tracking-[0.35em] text-white/90">
                 APPROVALS
               </div>
