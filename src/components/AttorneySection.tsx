@@ -40,8 +40,10 @@ const AttorneySection = () => {
                 MORE ABOUT KATE
               </Button>
 
-              <div className="pt-8 border-t border-border">
+              <div className="pt-8 border-t border-border space-y-4">
                 <p className="text-sm font-medium text-muted-foreground">E-2 VISA LAWYERS</p>
+                <div className="border-t border-border"></div>
+                <p className="text-sm font-medium text-muted-foreground">ALONZI WINS</p>
               </div>
             </div>
 
